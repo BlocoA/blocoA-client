@@ -1,0 +1,208 @@
+//
+// variables.scss
+//
+
+// Color system
+
+$white: #ffffff;
+$gray-50: #f7f5ff;
+$gray-100: #f7f6fa;
+$gray-200: #eae9ef;
+$gray-300: #dfdee6;
+$gray-400: #d0ceda;
+$gray-500: #b0adbd;
+$gray-600: #6f6c7d;
+$gray-700: #4b4957;
+$gray-800: #363440;
+$gray-900: #211c37;
+$black: #000000;
+
+$green: #2ea340;
+$red: #e03f3f;
+$orange: #ff8933;
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+$min-contrast-ratio: 2;
+
+// Customize the light and dark text colors for use in our color contrast function.
+$color-contrast-dark: $black;
+$color-contrast-light: $white;
+
+$primary: #795cef;
+$warning: $orange;
+
+
+// Options
+
+$enable-validation-icons: false;
+$enable-negative-margins: true;
+
+
+// Prefix for :root CSS variables
+
+$prefix: bs-;
+
+
+// Body
+
+$body-bg: #eeedf0;
+$body-color: $gray-900;
+
+
+// Links
+
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+
+// Components
+
+$border-color: $gray-300;
+
+$border-radius-sm: .125rem;
+$border-radius-lg: .5rem;
+
+$box-shadow: 0 .5rem 1rem rgba($black, .15);
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
+
+$component-active-color: $white;
+$component-active-bg: $primary;
+
+
+// Typography
+
+$font-family-sans-serif: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.125; // 18px
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$headings-font-weight: $font-weight-bold;
+
+$display-font-weight: $font-weight-bold;
+
+$lead-font-weight: $font-weight-normal;
+
+
+// Buttons + Forms
+
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x: .75rem;
+
+$input-btn-focus-width: 0;
+
+$input-btn-padding-y-sm: .75rem;
+$input-btn-padding-x-sm: .375rem;
+$input-btn-font-size-sm: $font-size-base;
+
+$input-btn-padding-y-lg: 1.375rem;
+$input-btn-padding-x-lg: 1.25rem;
+$input-btn-font-size-lg: 1.25rem;
+
+
+// Buttons
+
+$btn-disabled-opacity: .38;
+
+$btn-border-radius: $border-radius-sm;
+$btn-border-radius-lg: $border-radius-sm;
+
+$btn-soft-bg-opacity: .1;
+
+
+// Forms
+
+$form-label-font-weight: $font-weight-bold;
+
+$input-bg: transparent;
+
+$input-border-color: $component-active-bg;
+
+$input-border-radius: $border-radius-sm;
+$input-border-radius-lg: $border-radius-sm;
+
+$input-focus-border-color: $input-border-color;
+
+$form-check-input-width: 1.25em;
+
+$form-check-input-border: 1px solid $component-active-bg;
+
+$form-check-input-checked-color: $component-active-bg;
+$form-check-input-checked-bg-color: transparent;
+$form-check-input-checked-border-color: $form-check-input-checked-color;
+
+$form-check-input-indeterminate-color: $component-active-bg;
+$form-check-input-indeterminate-bg-color: transparent;
+$form-check-input-indeterminate-border-color: $form-check-input-indeterminate-color;
+
+$form-check-input-disabled-opacity: .38;
+
+$form-switch-checked-color: $component-active-bg;
+
+$form-range-track-height: .25rem;
+
+
+// Navs
+
+$nav-tabs-border-radius: $border-radius-sm;
+
+$nav-pills-border-radius: $border-radius-sm;
+
+
+// Cards
+
+$card-spacer-y: 2rem;
+$card-spacer-x: $card-spacer-y;
+$card-border-width: 0;
+$card-bg: $white;
+$card-box-shadow: 1px 4px 4px rgba($black, .015), -1px 4px 4px rgba($black, .015), 0 4px 8px rgba($black, .015);
+$card-border-radius: $border-radius-sm;
+
+
+// Modals
+
+$modal-inner-padding: 2rem;
+
+$modal-content-border-width: 0;
+$modal-content-border-radius: $border-radius-sm;
+
+$modal-backdrop-opacity: .38;
+
+$modal-lg: 700px;
+
+
+// Spinners
+
+$spinner-animation-speed: .5s;
+
+
+// Sidebar
+
+$sidebar-width: 18rem;
+$sidebar-padding-x: 1.5rem;
+$sidebar-padding-y: 3rem;
+$sidebar-bg: $white;
+
+$sidebar-nav-item-margin-bottom: 1.5rem;
+
+$sidebar-nav-link-padding-y: 1rem;
+$sidebar-nav-link-padding-x: 1.75rem;
+$sidebar-nav-link-color: $gray-800;
+
+$sidebar-nav-font-size: 1.25rem;
+
+$sidebar-nav-border-radius: $border-radius-lg;
+
+
+// Main content
+
+$main-content-padding-x: $sidebar-width + 4rem;
+$main-content-padding-y: 3rem;
+
+
+// Backgrounds
+
+$bg-soft-bg-opacity: .1;

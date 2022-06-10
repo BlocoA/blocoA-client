@@ -1,0 +1,11 @@
+//
+// buttonsc.scss
+//
+
+// Soft variants
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color}-soft {
+    @include btn-variant-soft(rgba($value, $btn-soft-bg-opacity), $value);
+  }
+}

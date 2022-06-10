@@ -1,0 +1,25 @@
+//
+// global.scss
+//
+
+// Bootstrap functions
+@import "bootstrap/scss/functions";
+
+// Theme variables
+@import "files/variables";
+
+// Bootstrap variables
+@import "bootstrap/scss/variables";
+
+// Theme variables (objects)
+@import "files/variables.objects";
+
+// Bootstrap maps
+@import "bootstrap/scss/maps";
+
+// Bootstrap configuration
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// Theme utilities
+@import "files/utilities";

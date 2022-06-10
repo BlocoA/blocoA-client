@@ -1,0 +1,21 @@
+//
+// buttons.scss
+//
+
+// Soft variant
+
+@mixin btn-variant-soft($bg, $color) {
+  color: $color;
+  border-color: $color;
+  background-color: $bg;
+
+  &:hover, &:focus {
+    color: $color;
+    background-color: fade-in($bg, .05);
+  }
+
+  &.active {
+    color: $color;
+    background-color: fade-in($bg, .05);
+  }
+}

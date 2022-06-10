@@ -1,0 +1,57 @@
+//
+// sidebar.scss
+//
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: $sidebar-width;
+  padding: $sidebar-padding-y $sidebar-padding-x;
+  background-color: $sidebar-bg;
+
+  .nav {
+    .nav-item {
+      margin-bottom: $sidebar-nav-item-margin-bottom;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      padding: $sidebar-nav-link-padding-y $sidebar-nav-link-padding-x;
+      font-size: $sidebar-nav-font-size;
+      border-radius: $sidebar-nav-border-radius;
+
+      &:hover:not(.active) {
+        background-color: $gray-200;
+      }
+
+      &:not(.active) {
+        color: $sidebar-nav-link-color;
+      }
+
+      .svg-inline--icon {
+        margin-right: $sidebar-nav-link-padding-x;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+
+    &-body {
+
+    }
+
+    &-img {
+      width: 4rem;
+      height: 4rem;
+      object-fit: cover;
+      border-radius: $border-radius-pill;
+    }
+  }
+}
