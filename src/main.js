@@ -1,3 +1,6 @@
+// Theme scss
+import "@/assets/css/theme.scss";
+
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";

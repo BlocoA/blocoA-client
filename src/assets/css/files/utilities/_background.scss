@@ -1,0 +1,23 @@
+//
+// background.scss
+//
+
+// Cover
+
+.bg-cover {
+  --bg-cover-position: center;
+
+  background-position: var(--bg-cover-position);
+  background-image: var(--bg-cover-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+// Soft variants
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}-soft {
+    background-color: rgba($value, $bg-soft-bg-opacity);
+  }
+}

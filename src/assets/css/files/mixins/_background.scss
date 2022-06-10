@@ -1,0 +1,17 @@
+//
+// background.scss
+//
+
+// Soft variant
+
+@mixin bg-variant-soft($bg, $color) {
+  background-color: $bg;
+
+  &:hover, &:focus {
+    background-color: fade-in($bg, .05);
+  }
+
+  &.active {
+    background-color: fade-in($bg, .05);
+  }
+}

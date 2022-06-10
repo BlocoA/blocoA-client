@@ -1,0 +1,775 @@
+//
+// icon.scss
+//
+
+svg:not(:root).svg-inline--icon, svg:not(:host).svg-inline--icon {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--icon {
+  display: var(--icon-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.svg-inline--icon.icon-2xs {
+  vertical-align: 0.1em;
+}
+
+.svg-inline--icon.icon-xs {
+  vertical-align: 0em;
+}
+
+.svg-inline--icon.icon-sm {
+  vertical-align: -0.0714285705em;
+}
+
+.svg-inline--icon.icon-lg {
+  vertical-align: -0.2em;
+}
+
+.svg-inline--icon.icon-xl {
+  vertical-align: -0.25em;
+}
+
+.svg-inline--icon.icon-2xl {
+  vertical-align: -0.3125em;
+}
+
+.svg-inline--icon.icon-pull-left {
+  margin-right: var(--icon-pull-margin, 0.3em);
+  width: auto;
+}
+
+.svg-inline--icon.icon-pull-right {
+  margin-left: var(--icon-pull-margin, 0.3em);
+  width: auto;
+}
+
+.svg-inline--icon.icon-li {
+  width: var(--icon-li-width, 2em);
+  top: 0.25em;
+}
+
+.svg-inline--icon.icon-fw {
+  width: var(--icon-fw-width, 1.25em);
+}
+
+.icon-layers svg.svg-inline--icon {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.icon-layers-counter, .icon-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.icon-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+
+.icon-layers svg.svg-inline--icon {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.icon-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.icon-layers-counter {
+  background-color: var(--icon-counter-background-color, #ff253a);
+  border-radius: var(--icon-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--icon-inverse, #ffffff);
+  line-height: var(--icon-counter-line-height, 1);
+  max-width: var(--icon-counter-max-width, 5em);
+  min-width: var(--icon-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--icon-counter-padding, 0.25em 0.5em);
+  right: var(--icon-right, 0);
+  text-overflow: ellipsis;
+  top: var(--icon-top, 0);
+  -webkit-transform: scale(var(--icon-counter-scale, 0.25));
+  transform: scale(var(--icon-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+}
+
+.icon-layers-bottom-right {
+  bottom: var(--icon-bottom, 0);
+  right: var(--icon-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--icon-layers-scale, 0.25));
+  transform: scale(var(--icon-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+
+.icon-layers-bottom-left {
+  bottom: var(--icon-bottom, 0);
+  left: var(--icon-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--icon-layers-scale, 0.25));
+  transform: scale(var(--icon-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.icon-layers-top-right {
+  top: var(--icon-top, 0);
+  right: var(--icon-right, 0);
+  -webkit-transform: scale(var(--icon-layers-scale, 0.25));
+  transform: scale(var(--icon-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+}
+
+.icon-layers-top-left {
+  left: var(--icon-left, 0);
+  right: auto;
+  top: var(--icon-top, 0);
+  -webkit-transform: scale(var(--icon-layers-scale, 0.25));
+  transform: scale(var(--icon-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.icon-1x {
+  font-size: 1em;
+}
+
+.icon-2x {
+  font-size: 2em;
+}
+
+.icon-3x {
+  font-size: 3em;
+}
+
+.icon-4x {
+  font-size: 4em;
+}
+
+.icon-5x {
+  font-size: 5em;
+}
+
+.icon-6x {
+  font-size: 6em;
+}
+
+.icon-7x {
+  font-size: 7em;
+}
+
+.icon-8x {
+  font-size: 8em;
+}
+
+.icon-9x {
+  font-size: 9em;
+}
+
+.icon-10x {
+  font-size: 10em;
+}
+
+.icon-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.icon-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.icon-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.icon-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.icon-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.icon-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.icon-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.icon-ul {
+  list-style-type: none;
+  margin-left: var(--icon-li-margin, 2.5em);
+  padding-left: 0;
+}
+
+.icon-ul > li {
+  position: relative;
+}
+
+.icon-li {
+  left: calc(var(--icon-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--icon-li-width, 2em);
+  line-height: inherit;
+}
+
+.icon-border {
+  border-color: var(--icon-border-color, #eeeeee);
+  border-radius: var(--icon-border-radius, 0.1em);
+  border-style: var(--icon-border-style, solid);
+  border-width: var(--icon-border-width, 0.08em);
+  padding: var(--icon-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.icon-pull-left {
+  float: left;
+  margin-right: var(--icon-pull-margin, 0.3em);
+}
+
+.icon-pull-right {
+  float: right;
+  margin-left: var(--icon-pull-margin, 0.3em);
+}
+
+.icon-beat {
+  -webkit-animation-name: icon-beat;
+  animation-name: icon-beat;
+  -webkit-animation-delay: var(--icon-animation-delay, 0);
+  animation-delay: var(--icon-animation-delay, 0);
+  -webkit-animation-direction: var(--icon-animation-direction, normal);
+  animation-direction: var(--icon-animation-direction, normal);
+  -webkit-animation-duration: var(--icon-animation-duration, 1s);
+  animation-duration: var(--icon-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--icon-animation-timing, ease-in-out);
+  animation-timing-function: var(--icon-animation-timing, ease-in-out);
+}
+
+.icon-bounce {
+  -webkit-animation-name: icon-bounce;
+  animation-name: icon-bounce;
+  -webkit-animation-delay: var(--icon-animation-delay, 0);
+  animation-delay: var(--icon-animation-delay, 0);
+  -webkit-animation-direction: var(--icon-animation-direction, normal);
+  animation-direction: var(--icon-animation-direction, normal);
+  -webkit-animation-duration: var(--icon-animation-duration, 1s);
+  animation-duration: var(--icon-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--icon-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+  animation-timing-function: var(--icon-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.icon-fade {
+  -webkit-animation-name: icon-fade;
+  animation-name: icon-fade;
+  -webkit-animation-delay: var(--icon-animation-delay, 0);
+  animation-delay: var(--icon-animation-delay, 0);
+  -webkit-animation-direction: var(--icon-animation-direction, normal);
+  animation-direction: var(--icon-animation-direction, normal);
+  -webkit-animation-duration: var(--icon-animation-duration, 1s);
+  animation-duration: var(--icon-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--icon-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+  animation-timing-function: var(--icon-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.icon-beat-fade {
+  -webkit-animation-name: icon-beat-fade;
+  animation-name: icon-beat-fade;
+  -webkit-animation-delay: var(--icon-animation-delay, 0);
+  animation-delay: var(--icon-animation-delay, 0);
+  -webkit-animation-direction: var(--icon-animation-direction, normal);
+  animation-direction: var(--icon-animation-direction, normal);
+  -webkit-animation-duration: var(--icon-animation-duration, 1s);
+  animation-duration: var(--icon-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--icon-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+  animation-timing-function: var(--icon-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.icon-flip {
+  -webkit-animation-name: icon-flip;
+  animation-name: icon-flip;
+  -webkit-animation-delay: var(--icon-animation-delay, 0);
+  animation-delay: var(--icon-animation-delay, 0);
+  -webkit-animation-direction: var(--icon-animation-direction, normal);
+  animation-direction: var(--icon-animation-direction, normal);
+  -webkit-animation-duration: var(--icon-animation-duration, 1s);
+  animation-duration: var(--icon-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--icon-animation-timing, ease-in-out);
+  animation-timing-function: var(--icon-animation-timing, ease-in-out);
+}
+
+.icon-shake {
+  -webkit-animation-name: icon-shake;
+  animation-name: icon-shake;
+  -webkit-animation-delay: var(--icon-animation-delay, 0);
+  animation-delay: var(--icon-animation-delay, 0);
+  -webkit-animation-direction: var(--icon-animation-direction, normal);
+  animation-direction: var(--icon-animation-direction, normal);
+  -webkit-animation-duration: var(--icon-animation-duration, 1s);
+  animation-duration: var(--icon-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--icon-animation-timing, linear);
+  animation-timing-function: var(--icon-animation-timing, linear);
+}
+
+.icon-spin {
+  -webkit-animation-name: icon-spin;
+  animation-name: icon-spin;
+  -webkit-animation-delay: var(--icon-animation-delay, 0);
+  animation-delay: var(--icon-animation-delay, 0);
+  -webkit-animation-direction: var(--icon-animation-direction, normal);
+  animation-direction: var(--icon-animation-direction, normal);
+  -webkit-animation-duration: var(--icon-animation-duration, 2s);
+  animation-duration: var(--icon-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--icon-animation-timing, linear);
+  animation-timing-function: var(--icon-animation-timing, linear);
+}
+
+.icon-spin-reverse {
+  --icon-animation-direction: reverse;
+}
+
+.icon-pulse,
+.icon-spin-pulse {
+  -webkit-animation-name: icon-spin;
+  animation-name: icon-spin;
+  -webkit-animation-direction: var(--icon-animation-direction, normal);
+  animation-direction: var(--icon-animation-direction, normal);
+  -webkit-animation-duration: var(--icon-animation-duration, 1s);
+  animation-duration: var(--icon-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  animation-iteration-count: var(--icon-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--icon-animation-timing, steps(8));
+  animation-timing-function: var(--icon-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon-beat,
+  .icon-bounce,
+  .icon-fade,
+  .icon-beat-fade,
+  .icon-flip,
+  .icon-pulse,
+  .icon-shake,
+  .icon-spin,
+  .icon-spin-pulse {
+    -webkit-animation-delay: -1ms;
+    animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+    animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+
+@-webkit-keyframes icon-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--icon-beat-scale, 1.25));
+    transform: scale(var(--icon-beat-scale, 1.25));
+  }
+}
+
+@keyframes icon-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--icon-beat-scale, 1.25));
+    transform: scale(var(--icon-beat-scale, 1.25));
+  }
+}
+
+@-webkit-keyframes icon-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--icon-bounce-start-scale-x, 1.1), var(--icon-bounce-start-scale-y, 0.9)) translateY(0);
+    transform: scale(var(--icon-bounce-start-scale-x, 1.1), var(--icon-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--icon-bounce-jump-scale-x, 0.9), var(--icon-bounce-jump-scale-y, 1.1)) translateY(var(--icon-bounce-height, -0.5em));
+    transform: scale(var(--icon-bounce-jump-scale-x, 0.9), var(--icon-bounce-jump-scale-y, 1.1)) translateY(var(--icon-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--icon-bounce-land-scale-x, 1.05), var(--icon-bounce-land-scale-y, 0.95)) translateY(0);
+    transform: scale(var(--icon-bounce-land-scale-x, 1.05), var(--icon-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--icon-bounce-rebound, -0.125em));
+    transform: scale(1, 1) translateY(var(--icon-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes icon-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--icon-bounce-start-scale-x, 1.1), var(--icon-bounce-start-scale-y, 0.9)) translateY(0);
+    transform: scale(var(--icon-bounce-start-scale-x, 1.1), var(--icon-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--icon-bounce-jump-scale-x, 0.9), var(--icon-bounce-jump-scale-y, 1.1)) translateY(var(--icon-bounce-height, -0.5em));
+    transform: scale(var(--icon-bounce-jump-scale-x, 0.9), var(--icon-bounce-jump-scale-y, 1.1)) translateY(var(--icon-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--icon-bounce-land-scale-x, 1.05), var(--icon-bounce-land-scale-y, 0.95)) translateY(0);
+    transform: scale(var(--icon-bounce-land-scale-x, 1.05), var(--icon-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--icon-bounce-rebound, -0.125em));
+    transform: scale(1, 1) translateY(var(--icon-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+@-webkit-keyframes icon-fade {
+  50% {
+    opacity: var(--icon-fade-opacity, 0.4);
+  }
+}
+
+@keyframes icon-fade {
+  50% {
+    opacity: var(--icon-fade-opacity, 0.4);
+  }
+}
+
+@-webkit-keyframes icon-beat-fade {
+  0%, 100% {
+    opacity: var(--icon-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--icon-beat-fade-scale, 1.125));
+    transform: scale(var(--icon-beat-fade-scale, 1.125));
+  }
+}
+
+@keyframes icon-beat-fade {
+  0%, 100% {
+    opacity: var(--icon-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--icon-beat-fade-scale, 1.125));
+    transform: scale(var(--icon-beat-fade-scale, 1.125));
+  }
+}
+
+@-webkit-keyframes icon-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--icon-flip-x, 0), var(--icon-flip-y, 1), var(--icon-flip-z, 0), var(--icon-flip-angle, -180deg));
+    transform: rotate3d(var(--icon-flip-x, 0), var(--icon-flip-y, 1), var(--icon-flip-z, 0), var(--icon-flip-angle, -180deg));
+  }
+}
+
+@keyframes icon-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--icon-flip-x, 0), var(--icon-flip-y, 1), var(--icon-flip-z, 0), var(--icon-flip-angle, -180deg));
+    transform: rotate3d(var(--icon-flip-x, 0), var(--icon-flip-y, 1), var(--icon-flip-z, 0), var(--icon-flip-angle, -180deg));
+  }
+}
+
+@-webkit-keyframes icon-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+    transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes icon-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+    transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.icon-rotate-90 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.icon-rotate-180 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.icon-rotate-270 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.icon-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.icon-flip-vertical {
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.icon-flip-both,
+.icon-flip-horizontal.icon-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+.icon-rotate-by {
+  -webkit-transform: rotate(var(--icon-rotate-angle, none));
+  transform: rotate(var(--icon-rotate-angle, none));
+}
+
+.icon-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.icon-stack-1x,
+.icon-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--icon-stack-z-index, auto);
+}
+
+.svg-inline--icon.icon-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+
+.svg-inline--icon.icon-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.icon-inverse {
+  color: var(--icon-inverse, #ffffff);
+}
+
+.sr-only,
+.icon-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.icon-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--icon .icon-primary {
+  fill: var(--icon-primary-color, currentColor);
+  opacity: var(--icon-primary-opacity, 1);
+}
+
+.svg-inline--icon .icon-secondary {
+  fill: var(--icon-secondary-color, currentColor);
+  opacity: var(--icon-secondary-opacity, 0.4);
+}
+
+.svg-inline--icon.icon-swap-opacity .icon-primary {
+  opacity: var(--icon-secondary-opacity, 0.4);
+}
+
+.svg-inline--icon.icon-swap-opacity .icon-secondary {
+  opacity: var(--icon-primary-opacity, 1);
+}
+
+.svg-inline--icon mask .icon-primary,
+.svg-inline--icon mask .icon-secondary {
+  fill: black;
+}
+
+.fad.icon-inverse,
+.icon-duotone.icon-inverse {
+  color: var(--icon-inverse, #ffffff);
+}
