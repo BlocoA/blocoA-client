@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import HomeView from "@/views/HomeView.vue";
-import authenticationValidator from './validators/authenticationValidator'
+import { redirectIfLogged, redirectIfNotLogged } from './validators/authenticationValidator'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -72,6 +72,7 @@ const router = createRouter({
   ],
 });
 
-router.beforeEach(authenticationValidator)
+router.beforeEach(redirectIfNotLogged)
+router.beforeEach(redirectIfLogged)
 
 export default router;
