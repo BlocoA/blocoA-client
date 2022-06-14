@@ -1,24 +1,69 @@
-<script setup>
-import { RouterLink } from "vue-router";
+<script>
+import { mapActions } from "pinia";
+import useAuthStore from "../stores/authStore";
+import condominiumsService from "@/services/condominiumsService";
+
+export default {
+  data() {
+    return {
+      condominiums: [],
+    };
+  },
+  methods: {
+    ...mapActions(useAuthStore, ["logout"]),
+  },
+  async mounted() {
+    try {
+      this.condominiums = await condominiumsService.getAll();
+    } catch (error) {
+      console.error(error);
+    }
+  },
+};
 </script>
 
 <template>
-  <div class="card-body d-flex flex-column align-items-center justify-content-center">
+  <div
+    class="
+      card-body
+      d-flex
+      flex-column
+      align-items-center
+      justify-content-center
+    "
+  >
     <h1 class="display-5 mb-13">Criar ambiente</h1>
     <div class="environment-menu">
-      <button class="environment-menu-item btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#environment-modal">
-        <svg class="svg-inline--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" />
-        </svg>
+      <button
+        v-if="condominiums.length === 0"
+        class="environment-menu-item btn btn-primary"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#environment-modal"
+      >
+        <img src="@/assets/img/icons/add.svg" alt="" />
       </button>
+      <RouterLink
+        v-else
+        v-for="condominium in condominiums"
+        :to="{ name: 'admin-mural', params: { condominiumId: condominium.id } }"
+        class="environment-menu-item btn btn-primary"
+      >
+        <h2>{{ condominium.name }}</h2>
+      </RouterLink>
       <div class="environment-menu-info border-dashed">
-        <p>Assine o plano <strong>Avançado</strong> para adicionar mais de um ambiente </p>
+        <p>
+          Assine o plano <strong>Avançado</strong> para adicionar mais de um
+          ambiente
+        </p>
         <button class="btn btn-sm btn-primary w-100" type="button">
           Assinar por R$ 179
         </button>
       </div>
     </div>
-    <RouterLink to="/" class="btn btn-sm btn-outline-primary mt-21 px-8">Sair</RouterLink>
+    <button @click="logout" class="btn btn-sm btn-outline-primary mt-21 px-8">
+      Sair
+    </button>
   </div>
 </template>
 

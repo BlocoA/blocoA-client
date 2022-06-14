@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+
+import HomeView from "@/views/HomeView.vue";
+import { redirectIfLogged, redirectIfNotLogged } from './validators/authenticationValidator'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,7 +29,7 @@ const router = createRouter({
       ],
     },
     {
-      path: "/admin",
+      path: "/admin/:condominiumId",
       name: "admin",
       component: () => import("../views/AdminView.vue"),
       children: [
@@ -39,6 +41,7 @@ const router = createRouter({
           path: "mural",
           name: "admin-mural",
           component: () => import("../views/AdminMuralView.vue"),
+          props: true,
         },
         {
           path: "financeiro",
@@ -69,5 +72,8 @@ const router = createRouter({
     },
   ],
 });
+
+router.beforeEach(redirectIfNotLogged)
+router.beforeEach(redirectIfLogged)
 
 export default router;
