@@ -29,7 +29,7 @@ const router = createRouter({
       ],
     },
     {
-      path: "/admin",
+      path: "/admin/:condominiumId",
       name: "admin",
       component: () => import("../views/AdminView.vue"),
       children: [
@@ -41,6 +41,7 @@ const router = createRouter({
           path: "mural",
           name: "admin-mural",
           component: () => import("../views/AdminMuralView.vue"),
+          props: true,
         },
         {
           path: "financeiro",
