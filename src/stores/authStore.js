@@ -10,7 +10,7 @@ const useAuthStore = defineStore('auth', {
   actions: {
     async login(username, password) {
       try {
-        const { data: { token: userToken } } = await usersService.login(username, password)
+        const { token: userToken } = await usersService.login(username, password)
 
         this.userToken = userToken
 
