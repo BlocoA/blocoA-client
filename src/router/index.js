@@ -62,11 +62,18 @@ const router = createRouter({
           path: "habitacao",
           name: "admin-housing",
           component: () => import("../views/AdminHousingView.vue"),
+          props: true,
         },
         {
           path: "chat",
           name: "admin-chat",
           component: () => import("../views/AdminChatView.vue"),
+        },
+        {
+          path: "novo-morador",
+          name: "novo-morador",
+          component: () => import("../views/AdminNewResidentView.vue"),
+          props: true,
         },
       ],
     },
