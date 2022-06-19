@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div v-if="resident.haveResident" class="have-resident">
+  <div v-if="resident.have_resident" class="have-resident">
     <div class="unit-info">
       <h3 class="identifier">{{ resident.identifier }}</h3>
       <span class="unit-contract-type">Própria</span>
