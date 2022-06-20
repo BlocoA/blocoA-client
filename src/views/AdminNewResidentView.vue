@@ -1,6 +1,7 @@
 <script>
 import AdminHeader from "@/components/AdminHeader.vue";
 import residentService from '@/services/residentService'
+import router from '@/router'
 
 export default {
   data() {
@@ -24,6 +25,8 @@ export default {
           this.identifier,
           this.condominiumId
         );
+
+        router.push({ name: "admin-housing" })
       } catch (error) {
         console.error(error);
       }
