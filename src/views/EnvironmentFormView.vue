@@ -1,5 +1,6 @@
 <script>
 import condominiumsService from '@/services/condominiumsService'
+import router from '@/router'
 
 export default {
   data() {
@@ -13,6 +14,8 @@ export default {
     async onSubmit() {
       try {
         condominiumsService.create(this.name, this.units_quantity, this.has_leisure_area);
+
+        router.push('/ambiente')
       } catch (error) {
         console.error(error);
       }
